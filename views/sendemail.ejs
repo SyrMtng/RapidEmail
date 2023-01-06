@@ -1,0 +1,87 @@
+<%- include('templates/atas')-%>
+
+<style type='text/css'>
+  input.untukInput2 {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+   }
+   textarea.untukTextArea2 {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+   }
+</style>
+
+<main id="main" >
+  <div class="container">
+    <h1></h1>
+  </div><!-- End Breadcrumbs -->
+
+  <section id="contact" class="contact section-bg">
+    <div class="container" data-aos="fade-up">
+      &nbsp;
+      <div class="section-header">
+        <h2>Send Email</h2>
+        <p>Silahkan Membuat <span>Message Baru</span></p>
+      </div>
+      <div class="container p-3 p-md-4" style="background-color: #FFFFFF;">
+        <form action="/" method="POST" enctype="multipart/form-data">
+          <div class="row g-3">
+            <div class="form-floating col">
+              <input type="email" class="form-control untukInput2" id="to" placeholder="TO" required>
+              <label for="floatingInput">To*</label>
+              <hr />
+            </div>
+            <div class="form-floating col">
+              <input type="email" class="form-control untukInput2" id="cc" placeholder="CC" >
+              <label for="floatingInput">Cc</label>
+              <hr />
+            </div>
+          </div>
+          <div class="">
+            <input type="text" class="form-control untukInput2" id="formGroupExampleInput" placeholder="Subject*" required>
+            <hr />
+          </div>
+          <div class="">
+            <textarea class="form-control untukTextArea2" placeholder="Message" id="floatingTextarea" style="height:300px;"></textarea>
+            <hr />
+          </div>
+          <div class="containers">
+            <p class="Attachment">
+              <!-- <input type="datetime-local"  style="width:180px;"> -->
+              <label for="Attachment">
+                <input type="file" id="actual-btn" hidden/>
+                <button type="button" class="btn btn-secondary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                    <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                  </svg>
+                  <label for="actual-btn" class="text-white">Attachment</label>
+                  <div class="containers"></div>
+                </button>
+                <span id="file-chosen">No File Attachment</span>
+              </label>
+            </p>
+          </div>
+          <button type="submit" class="btn btn-danger">Send Message</button>
+        </form>
+      </div>
+      <!--End Contact Form -->
+
+    </div>
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+<script>
+  const actualBtn = document.getElementById('actual-btn');
+  const fileChosen = document.getElementById('file-chosen');
+  actualBtn.addEventListener('change', function(){
+    fileChosen.textContent = this.files[0].name
+  })
+</script>
+
+<%- include('templates/bawah')-%>
