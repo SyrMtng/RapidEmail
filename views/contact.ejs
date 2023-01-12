@@ -11,11 +11,244 @@
         <h2>Contact</h2>
         <p>Helo <span>Contact Us</span></p>
       </div>
+      <div class="container section-bg" style="overflow: auto;">
+        <table class="table scroll">
+          <thead>
+            <tr>
+              <th scope="col" style="width:100px;"><p>ID</p></th>
+              <th scope="col" style="width:165px;"><p>Name</p></th>
+              <th scope="col" style="width:250px;"><p>Company</p></th>
+              <th scope="col" style="width:250px;"><p>Email</p></th>
+              <th scope="col" style="width:135px;"><p class="text-center">Gender</p></th>
+              <th scope="col" style="width:135px;"><p class="text-center">Action</p></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th style="width:100px;">1</th>
+              <td><p class="text2">Andi Dwi Angga</p></td>
+              <td><p class="text">Pernjanjian Kerjasama Antar Perusahaan Yang Memerlukan aaaaaa</p></td>
+              <td><p class="text">andidwianggaprastya@gmail.com</p></td>
+              <td style="width:135px;"><p class="text-center">Perempuan</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+            <tr>
+              <th style="width:100px;">2</th>
+              <td><p class="text2">Dwi</p></td>
+              <td ><p class="text">Pernjanjian Kerjasama Antar Perusahaan Yang Memerlukan Kesepakatan Kedua Belah Pihak</p></td>
+              <td><p class="text">cakalan9@gmail.com</p></td>
+              <td style="width:135px;"><p class = "text-center">Laki-laki</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+            <tr>
+              <th style="width:100px;">3</th>
+              <td><p class="text2">Angga</p></td>
+              <td><p class="text">Pernjanjian Kerjasama Antar Perusahaan Yang Memerlukan Kesepakatan Kedua Belah Pihak</p></td>
+              <td><p class="text">akuncoba@gmail.com</p></td>
+              <td style="width:135px;"><p class = "text-center">Laki-laki</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+            <tr>
+              <th style="width:100px;">1</th>
+              <td><p class="text2">Andi Dwi Angga</p></td>
+              <td><p class="text">Pernjanjian Kerjasama Antar Perusahaan Yang Memerlukan aaaaaa</p></td>
+              <td><p class="text">andidwianggaprastya@gmail.com</p></td>
+              <td style="width:135px;"><p class="text-center">Perempuan</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+            <tr>
+              <th style="width:100px;">2</th>
+              <td><p class="text2">Dwi</p></td>
+              <td ><p class="text">Pernjanjian Kerjasama Antar Perusahaan Yang Memerlukan Kesepakatan Kedua Belah Pihak</p></td>
+              <td><p class="text">cakalan9@gmail.com</p></td>
+              <td style="width:135px;"><p class = "text-center">Laki-laki</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+            <tr>
+              <th style="width:100px;">3</th>
+              <td><p class="text2">Angga</p></td>
+              <td><p class="text">Pernjanjian Kerjasama Antar Perusahaan Yang Memerlukan Kesepakatan Kedua Belah Pihak</p></td>
+              <td><p class="text">akuncoba@gmail.com</p></td>
+              <td style="width:135px;"><p class = "text-center">Laki-laki</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Add Contact
+      </button>  
+      <button type="button" class="btn btn-danger">Upload Contact</button>
       <!--End Contact Form -->
-
     </div>
   </section><!-- End Contact Section -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action="/" method="POST" enctype="multipart/form-data">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Add Contact</h1>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Name :</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Company :</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1"   required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email :</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            </div>
+            <label for="cars">Gender :</label>
+            <select name="cars" id="cars" class="form-select" aria-label="Default select example" required>
+              <option value="">None</option>
+              <option value="laki">Laki-laki</option>
+              <option value="perempuan">Perempuan</option>
+            </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Company</h2>
+        <p>Learn More <span>About Us</span></p>
+      </div>
+      <div class="container align-items-center" style="overflow: auto; width: 765px;">
+       <table class="table scrolll">
+          <thead>
+            <tr>
+              <th scope="col" style="width:100px;"><p>ID</p></th>
+              <th scope="col" style="width:250px;"><p>Company</p></th>
+              <th scope="col" style="width:250px;"><p>Email</p></th>
+              <th scope="col" style="width:135px;"><p class="text-center">Action</p></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th style="width:100px;">1</th>
+              <td><p class="text">PT Rapid Teknologi Indonesia</p></td>
+              <td><p class="text">hello@rapidtech.id</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+            <tr>
+              <th style="width:100px;">1</th>
+              <td><p class="text">PT Dharma Polimetal (Dharma Group)</p></td>
+              <td><p class="text">devi.novianti@dp.dharmap.com</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+            <tr>
+              <th style="width:100px;">1</th>
+              <td><p class="text">PT Panasonic Gobel Energy Indonesia</p></td>
+              <td><p class="text">pecgi.recruitment@id.panasonic.com</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+            <tr>
+              <th style="width:100px;">1</th>
+              <td><p class="text">PT Mattel Indonesia</p></td>
+              <td><p class="text">PTMIRECOP@mattel.com</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+            <tr>
+              <th style="width:100px;">1</th>
+              <td><p class="text">PT Rapid Teknologi Indonesia</p></td>
+              <td><p class="text">hello@rapidtech.id</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+            <tr>
+              <th style="width:100px;">1</th>
+              <td><p class="text">PT Dharma Polimetal (Dharma Group)</p></td>
+              <td><p class="text">devi.novianti@dp.dharmap.com</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+            <tr>
+              <th style="width:100px;">1</th>
+              <td><p class="text">PT Panasonic Gobel Energy Indonesia</p></td>
+              <td><p class="text">pecgi.recruitment@id.panasonic.com</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+            <tr>
+              <th style="width:100px;">1</th>
+              <td><p class="text">PT Mattel Indonesia</p></td>
+              <td><p class="text">PTMIRECOP@mattel.com</p></td>
+              <td style="width:135px;"><p class = "text-center">
+                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
+                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
+              </p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container align-items-center" style="overflow: auto; width: 765px;">
+        <a href="" class="btn btn-danger">Add Company</a>
+        <button type="button" class="btn btn-danger">Upload Company</button>
+      </div>
+
+    </div>
+  </section>
 
 </main><!-- End #main -->
-
+<style>
+  .text{
+    width: 235px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .text2{
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+</style>
 <%- include('templates/bawah')-%>
