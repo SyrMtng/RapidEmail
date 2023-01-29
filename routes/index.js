@@ -15,9 +15,13 @@ const fileStorage = multer.diskStorage({
 const kirim = multer({
 	storage: fileStorage
 })
+/* Get Login */
+router.get('/', function (req,res,next){
+	res.render('login',{title:'Send Email'});
+})
 
 /* GET Halaman Utama */
-router.get('/', function(req, res, next) {
+router.get('/home', function(req, res, next) {
 	res.render('home', { title: 'Send Email' });
 });
 router.get('/contact', function(req, res, next) {

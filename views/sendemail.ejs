@@ -33,10 +33,42 @@
         <form action="/" method="POST" enctype="multipart/form-data">
           <div class="row g-3">
             <div class="form-floating col">
-              <input type="email" class="form-control untukInput2" id="to" placeholder="TO" required>
-              <label for="floatingInput">To*</label>
-              <hr />
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Select Contact
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><input type="checkbox" onClick="toggle(this)" > Select All<br/></li>
+                <li><input type="checkbox" name="foo" value="bar1"> Bar 1<br/></li>
+                <li><input type="checkbox" name="foo" value="bar2"> Bar 2<br/></li>
+                
+              </ul>
+              <!-- <input type="email" class="form-control untukInput2" id="to" placeholder="TO" required> -->
+              <!-- <label for="floatingInput">To*</label> -->
+              
+              <!-- <hr /> -->
             </div>
+            <!-- <div class="dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Select Contact
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><input type="checkbox" onClick="toggle(this)" > Select All<br/></li>
+                <li><input type="checkbox" name="foo" value="bar1"> Bar 1<br/></li>
+                <li><input type="checkbox" name="foo" value="bar2"> Bar 2<br/></li>
+              </ul>
+            </div> -->
+            <!-- <select class="form-select" aria-label="Default select example">
+              <option selected>Select To</option>
+               
+                <option type="checkbox" onClick="toggle(this)" /> Select All<br/>
+
+                <option type="checkbox" name="foo" value="bar1"> Bar 1<br/>
+                <option type="checkbox" name="foo" value="bar2"> Bar 2<br/>
+                <option type="checkbox" name="foo" value="bar3"> Bar 3<br/>
+                <option type="checkbox" name="foo" value="bar4"> Bar 4<br/>
+             
+            </select> -->
+            <!-- </div> -->
             <div class="form-floating col">
               <input type="email" class="form-control untukInput2" id="cc" placeholder="CC" >
               <label for="floatingInput">Cc</label>
@@ -76,6 +108,7 @@
   </section><!-- End Contact Section -->
 
 </main><!-- End #main -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
   const actualBtn = document.getElementById('actual-btn');
   const fileChosen = document.getElementById('file-chosen');
@@ -83,5 +116,13 @@
     fileChosen.textContent = this.files[0].name
   })
 </script>
+<script language="JavaScript">
+function toggle(source) {
+  checkboxes = document.getElementsByName('foo');
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+  </script>
 
 <%- include('templates/bawah')-%>
