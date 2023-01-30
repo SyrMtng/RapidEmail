@@ -27,48 +27,50 @@
       &nbsp;
       <div class="section-header">
         <h2>Send Email</h2>
-        <p>Silahkan Membuat <span>Message Baru</span></p>
+        <p>New <span>Message</span></p>
       </div>
       <div class="container p-3 p-md-4" style="background-color: #FFFFFF;">
         <form action="/" method="POST" enctype="multipart/form-data">
           <div class="row g-3">
-            <div class="form-floating col">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Select Contact
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><input type="checkbox" onClick="toggle(this)" > Select All<br/></li>
-                <li><input type="checkbox" name="foo" value="bar1"> Bar 1<br/></li>
-                <li><input type="checkbox" name="foo" value="bar2"> Bar 2<br/></li>
-                
-              </ul>
-              <!-- <input type="email" class="form-control untukInput2" id="to" placeholder="TO" required> -->
-              <!-- <label for="floatingInput">To*</label> -->
-              
-              <!-- <hr /> -->
+            <div class="col">
+              <label for="company"><span style="color: #7f7f90; font-size: 14px;">Dear</span></label>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" style="width: 100%;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Select Company
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    &nbsp;
+                    <input class="form-check-input" type="checkbox" onchange="checkAll(this)" name="chk[]">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Select All
+                    </label>&nbsp;
+                  </li>
+                  <li>
+                    &emsp;
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="chkbox[]">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      PT Panasonic Gobel Energy Indonesia
+                    </label>&nbsp;
+                  </li>
+                  <li>
+                    &emsp;
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="chkbox[]">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      PT Mattel Indonesia
+                    </label>&nbsp;
+                  </li>
+                  <li>
+                    &emsp;
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      PT. Rapid Teknologi Indonesia
+                    </label>&nbsp;
+                  </li>
+                </ul>
+              </div>
+              <hr />
             </div>
-            <!-- <div class="dropdown">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Select Contact
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><input type="checkbox" onClick="toggle(this)" > Select All<br/></li>
-                <li><input type="checkbox" name="foo" value="bar1"> Bar 1<br/></li>
-                <li><input type="checkbox" name="foo" value="bar2"> Bar 2<br/></li>
-              </ul>
-            </div> -->
-            <!-- <select class="form-select" aria-label="Default select example">
-              <option selected>Select To</option>
-               
-                <option type="checkbox" onClick="toggle(this)" /> Select All<br/>
-
-                <option type="checkbox" name="foo" value="bar1"> Bar 1<br/>
-                <option type="checkbox" name="foo" value="bar2"> Bar 2<br/>
-                <option type="checkbox" name="foo" value="bar3"> Bar 3<br/>
-                <option type="checkbox" name="foo" value="bar4"> Bar 4<br/>
-             
-            </select> -->
-            <!-- </div> -->
             <div class="form-floating col">
               <input type="email" class="form-control untukInput2" id="cc" placeholder="CC" >
               <label for="floatingInput">Cc</label>
@@ -108,21 +110,29 @@
   </section><!-- End Contact Section -->
 
 </main><!-- End #main -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
   const actualBtn = document.getElementById('actual-btn');
   const fileChosen = document.getElementById('file-chosen');
   actualBtn.addEventListener('change', function(){
     fileChosen.textContent = this.files[0].name
   })
+
+  function checkAll(ele) {
+       var checkboxes = document.getElementsByTagName('input');
+       if (ele.checked) {
+           for (var i = 0; i < checkboxes.length; i++) {
+               if (checkboxes[i].type == 'checkbox' ) {
+                   checkboxes[i].checked = true;
+               }
+           }
+       } else {
+           for (var i = 0; i < checkboxes.length; i++) {
+               if (checkboxes[i].type == 'checkbox') {
+                   checkboxes[i].checked = false;
+               }
+           }
+       }
+   }
 </script>
-<script language="JavaScript">
-function toggle(source) {
-  checkboxes = document.getElementsByName('foo');
-  for(var i=0, n=checkboxes.length;i<n;i++) {
-    checkboxes[i].checked = source.checked;
-  }
-}
-  </script>
 
 <%- include('templates/bawah')-%>
