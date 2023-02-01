@@ -4,20 +4,30 @@
     <h1></h1>
   </div><!-- End Breadcrumbs -->
 
-  <section id="company" class="company">
+  <section id="company" class="company section-bg">
     <div class="container" data-aos="fade-up">
-
+      &nbsp;
       <div class="section-header">
         <h2>Company</h2>
-        <p>Company <span>List</span></p>
+        <p>Company <span>Info</span></p>
       </div>
       <div class="container align-items-center" style="overflow: auto; width: 765px;">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Select Company
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">PT. Rapid Teknologi Indonesia</a></li>
+            <li><a class="dropdown-item" href="#">PT Dharma Polimetal (Dharma Group)</a></li>
+            <li><a class="dropdown-item" href="#">PT Panasonic Gobel Energy Indonesia</a></li>
+          </ul>
+        </div>
        <table class="table scrolll">
           <thead>
             <tr>
               <th scope="col" style="width:100px;"><p>ID</p></th>
               <th scope="col" style="width:250px;"><p>Company</p></th>
-              <th scope="col" style="width:250px;"><p>Email</p></th>
+              <th scope="col" style="width:250px;"><p>Address</p></th>
               <th scope="col" style="width:135px;"><p class="text-center">Action</p></th>
             </tr>
           </thead>
@@ -25,70 +35,7 @@
             <tr>
               <th style="width:100px;">1</th>
               <td><p class="text">PT Rapid Teknologi Indonesia</p></td>
-              <td><p class="text">hello@rapidtech.id</p></td>
-              <td style="width:135px;"><p class = "text-center">
-                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
-                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
-              </p></td>
-            </tr>
-            <tr>
-              <th style="width:100px;">1</th>
-              <td><p class="text">PT Dharma Polimetal (Dharma Group)</p></td>
-              <td><p class="text">devi.novianti@dp.dharmap.com</p></td>
-              <td style="width:135px;"><p class = "text-center">
-                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
-                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
-              </p></td>
-            </tr>
-            <tr>
-              <th style="width:100px;">1</th>
-              <td><p class="text">PT Panasonic Gobel Energy Indonesia</p></td>
-              <td><p class="text">pecgi.recruitment@id.panasonic.com</p></td>
-              <td style="width:135px;"><p class = "text-center">
-                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
-                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
-              </p></td>
-            </tr>
-            <tr>
-              <th style="width:100px;">1</th>
-              <td><p class="text">PT Mattel Indonesia</p></td>
-              <td><p class="text">PTMIRECOP@mattel.com</p></td>
-              <td style="width:135px;"><p class = "text-center">
-                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
-                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
-              </p></td>
-            </tr>
-            <tr>
-              <th style="width:100px;">1</th>
-              <td><p class="text">PT Rapid Teknologi Indonesia</p></td>
-              <td><p class="text">hello@rapidtech.id</p></td>
-              <td style="width:135px;"><p class = "text-center">
-                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
-                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
-              </p></td>
-            </tr>
-            <tr>
-              <th style="width:100px;">1</th>
-              <td><p class="text">PT Dharma Polimetal (Dharma Group)</p></td>
-              <td><p class="text">devi.novianti@dp.dharmap.com</p></td>
-              <td style="width:135px;"><p class = "text-center">
-                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
-                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
-              </p></td>
-            </tr>
-            <tr>
-              <th style="width:100px;">1</th>
-              <td><p class="text">PT Panasonic Gobel Energy Indonesia</p></td>
-              <td><p class="text">pecgi.recruitment@id.panasonic.com</p></td>
-              <td style="width:135px;"><p class = "text-center">
-                <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
-                <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
-              </p></td>
-            </tr>
-            <tr>
-              <th style="width:100px;">1</th>
-              <td><p class="text">PT Mattel Indonesia</p></td>
-              <td><p class="text">PTMIRECOP@mattel.com</p></td>
+              <td><p class="text">PT Rapid Teknologi Indonesia - BSD, Indonesia</p></td>
               <td style="width:135px;"><p class = "text-center">
                 <a href="" class="btn btn-outline-warning btn-sm"><i class="bi bi-pencil-square"></i></a>
                 <a href="" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash3-fill"></i></a>
@@ -99,21 +46,20 @@
       </div>
       <div class="container align-items-center" style="overflow: auto; width: 765px;">
         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdropComp">
-          Add Contact
+          Add Company
         </button> 
         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdropUpload">Upload Company</button>
       </div>
 
     </div>
   </section>
-  <section id="contact" class="contact section-bg">
+  <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
-      &nbsp;
       <div class="section-header">
         <h2>Contact</h2>
-        <p>Contact <span>List</span></p>
+        <p>Contact List <span>PT. Rapid Teknologi Indonesia</span></p>
       </div>
-      <div class="container section-bg" style="overflow: auto;">
+      <div class="container" style="overflow: auto;">
         <table class="table scroll">
           <thead>
             <tr>
@@ -253,8 +199,8 @@
               <input type="text" class="form-control" id="exampleFormControlInput1"   required>
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Email :</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+              <label for="exampleFormControlInput1" class="form-label">Address :</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" required>
             </div>
           </div>
           <div class="modal-footer">
